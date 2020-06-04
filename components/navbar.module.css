@@ -1,0 +1,19 @@
+.div_top_hypers {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ul_top_hypers {
+  margin: 0; /* To remove default bottom margin */
+  padding: 0; /* To remove default left padding */
+}
+
+.ul_top_hypers li {
+  display: inline;
+  margin: 20px;
+}
+
+.ul_top_hypers img {
+  max-width: 40px;
+}

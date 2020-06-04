@@ -1,0 +1,1 @@
+{"ast":null,"code":"var __jsx = React.createElement;\nimport React from \"react\";\nimport styles from \"./layout.module.css\";\nimport Link from \"next/link\";\nimport Layout from \"../components/Layout\";\n\nvar SocialMedia = function SocialMedia() {\n  return __jsx(Layout, null);\n};\n\nexport default SocialMedia;","map":null,"metadata":{},"sourceType":"module"}

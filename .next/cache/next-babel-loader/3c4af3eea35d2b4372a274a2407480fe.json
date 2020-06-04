@@ -1,0 +1,1 @@
+{"ast":null,"code":"import React from \"react\";\nvar __jsx = React.createElement;\nimport styles from \"./layout.module.css\";\n\nvar Submenu = function Submenu() {\n  return __jsx(\"div\", null, __jsx(\"h1\", null, \" Niels de Visser is a software-developer\"));\n};\n\nexport default Submenu;","map":null,"metadata":{},"sourceType":"module"}

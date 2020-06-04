@@ -1,0 +1,21 @@
+{
+  "name": "new-port",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "next": "^9.4.2",
+    "next-images": "^1.4.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-rough-notation": "0.0.8",
+    "rough-notation": "^0.2.2"
+  }
+}
