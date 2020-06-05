@@ -7,11 +7,11 @@
   align-items: center;
   justify-content: center;
   
-}
+  }
 
 .mainContent {
   margin-top: 0px;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
   max-width: 750px;
 }
 

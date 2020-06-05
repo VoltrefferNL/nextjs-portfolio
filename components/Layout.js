@@ -9,7 +9,7 @@ const Layout = (props) => (
     <Head>
       <title>Niels de Visser | Portfolio</title>
       <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"></link>
-      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous"></link>
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossOrigin="anonymous"></link>
     </Head>
     {/* <div className={styles.submenu}>
       <Submenu />
@@ -18,9 +18,9 @@ const Layout = (props) => (
       <Navbar />
     </div> */}
     <div className={styles.mainContent}> {props.children}</div>
-    <div>
+    
       <Socials />
-    </div>
+    
   </div>
 );
 
