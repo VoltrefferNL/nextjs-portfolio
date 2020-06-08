@@ -1,25 +1,31 @@
 import Link from "next/link";
 import styles from "./navbar.module.css";
 
+const Menu = [
+  {
+    path : "/", name: "Home", 
+  },
+  {
+    path: "/blog", name: "Blog",
+  },
+  {
+    path: "/#", name: "Contact",
+  },
+
+  ]
+
 const Navbar = () => (
   <div className={styles.div_top_hypers}>
     <ul className={styles.ul_top_hypers}>
-      <li>
-        <Link href="/index">
-          <a>Home</a>
+     {Menu.map(({path, name}) => (
+      <li key={name}>
+        <Link href={path} as={path}>
+          <a>{name}</a>
         </Link>
       </li>
-      <li>
-        <Link href="/blog">
-          <a>Blog</a>
-        </Link>
-      </li>
-      <li>
-        <Link href="#">
-          <a>Contact</a>
-        </Link>
-      </li>
-    </ul>
+
+     ))} 
+      </ul>
   </div>
 );
 
