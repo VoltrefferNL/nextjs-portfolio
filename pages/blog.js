@@ -36,7 +36,7 @@ const blog = ({ allPostsData }) => {
     <Layout>
     <section>
       
-      {tag ?  <div><center><br /><h4> <u>{tag}</u> Related Posts </h4></center></div> : ""}
+      {tag ?  <div><center><br /><h4> <u>{tag}</u> Related Posts</h4></center></div> : ""}
         <ul>
           {tagsArr.map(({ id, date, title, tags }) => (
             <li key={id}>
