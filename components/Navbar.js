@@ -5,7 +5,7 @@ const Navbar = () => (
   <div className={styles.div_top_hypers}>
     <ul className={styles.ul_top_hypers}>
       <li>
-        <Link href="/about">
+        <Link href="/index">
           <a>Home</a>
         </Link>
       </li>
@@ -15,7 +15,7 @@ const Navbar = () => (
         </Link>
       </li>
       <li>
-        <Link href="/about">
+        <Link href="#">
           <a>Contact</a>
         </Link>
       </li>

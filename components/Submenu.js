@@ -4,7 +4,7 @@ import Link from "next/link";
 const Submenu = () => (
   <div>
     <Link href="/">
-      <h2>Niels de Visser</h2>
+    <h1 className={styles.headingXl}>Niels de Visser</h1>
     </Link>
   </div>
 );

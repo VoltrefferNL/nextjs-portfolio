@@ -11,12 +11,12 @@ const Layout = (props) => (
       <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"></link>
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossOrigin="anonymous"></link>
     </Head>
-    {/* <div className={styles.submenu}>
+    <div className={styles.submenu}>
       <Submenu />
-    </div> */}
-    {/* <div className={styles.navbar}>
+    </div>
+    <div className={styles.navbar}>
       <Navbar />
-    </div> */}
+    </div>
     <div className={styles.mainContent}> {props.children}</div>
     
       <Socials />
