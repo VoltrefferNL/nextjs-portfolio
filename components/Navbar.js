@@ -3,19 +3,18 @@ import styles from "./navbar.module.css";
 
 const Menu = [
   {
-    path : "/", name: "Home", 
-  },
-  {
     path: "/blog", name: "Blog",
   },
   {
-    path: "/#", name: "Contact",
+    path: "/#", name: "100DaysofCode",
   },
 
   ]
 
 const Navbar = () => (
+  <header className={styles.header_Wrapper}>
   <div className={styles.div_top_hypers}>
+    <div className={styles.logo_left}>NdV</div>
     <ul className={styles.ul_top_hypers}>
      {Menu.map(({path, name}) => (
       <li key={name}>
@@ -26,7 +25,10 @@ const Navbar = () => (
 
      ))} 
       </ul>
-  </div>
+      </div>
+  </header>
+  
+  
 );
 
 export default Navbar;
