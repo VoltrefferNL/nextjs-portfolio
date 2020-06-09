@@ -13,18 +13,18 @@ export async function getStaticPaths() {
   }
 
   
-  export default function Post({ postData : {title, date, tags} }) {
+  export default function Post({ postData}) {
      return (
       <Layout>
           <Head>
-              <title>Niels de Visser | {title}</title>
+              <title>Niels de Visser | {postData.title}</title>
           </Head>
           <article>
-          <h1 className={styles.headingXl}>{title}</h1>
+          <h1 className={styles.headingXl}>{postData.title}</h1>
         <div className={styles.lightText}>
-        <Date dateString={date} />
-        <div>{tags.map((tag) => (
-          <Link href={{pathname: '/blog', query: { "tag" : tag}}} as ={"/blog"} key={tag}><a><button>{tag}</button></a></Link>
+        <Date dateString={postData.date} />
+        <div>{postData.tags.map((tag) => (
+          <Link href={{pathname: '/blog', query: { "tag" : postData.tag}}} as ={"/blog"} key={postData.tag}><a><button>{postData.tag}</button></a></Link>
         ))}</div>
         </div>
         <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
