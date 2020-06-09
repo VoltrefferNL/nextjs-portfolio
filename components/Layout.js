@@ -10,6 +10,7 @@ const Layout = (props) => (
       <title>Niels de Visser | Portfolio</title>
       <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"></link>
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossOrigin="anonymous"></link>
+      <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
     </Head>
     <div className={styles.topend_wrapper}>
     <div className={styles.desktop_spacer}></div>
@@ -30,5 +31,8 @@ const Layout = (props) => (
     
   </div>
 );
+
+
+
 
 export default Layout;

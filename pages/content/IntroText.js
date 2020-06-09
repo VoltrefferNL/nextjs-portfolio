@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import styles from "../content/content.module.css"
 
 const Twitter = "https://twitter.com/DeVoltreffer";
 const Github = "https://github.com/VoltrefferNL";
