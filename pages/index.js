@@ -6,7 +6,7 @@ import Intro from "../includes/Intro";
 
 const Index = () => (
   <Layout>
-  <Intro />    
+  <Intro className={styles.container}/>    
   </Layout>
 );
 

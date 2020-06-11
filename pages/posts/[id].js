@@ -1,6 +1,6 @@
 import Layout from '../../components/Layout'
 import { getAllPostIds, getPostData } from '../../lib/posts'
-import Date from '../../components/date'
+import BlogDate from '../../components/blogdate'
 import Head from "next/head";
 import styles from "../../styles/blog.module.css"
 import Link from "next/link";
@@ -19,13 +19,14 @@ export async function getStaticPaths() {
           <Head>
               <title>Niels de Visser | {postData.title}</title>
           </Head>
-          <article>
-          <h1 className={styles.headingXl}>{postData.title}</h1>
+          <article className={styles.blog_container}>
+          <h5 className={styles.headingXl}>{postData.title}</h5>
         <div className={styles.lightText}>
-        <Date dateString={postData.date} />
+        
         <div>{postData.tags.map((tag) => (
-          <Link href={{pathname: '/blog', query: { "tag" : postData.tag}}} as ={"/blog"} key={postData.tag}><a><button>{postData.tag}</button></a></Link>
-        ))}</div>
+          <Link href={{pathname: '/blog', query: { "tag" : tag}}} as ={"/blog"} key={tag}><a><span className={tag}>{tag}</span></a></Link>
+          
+        ))}<BlogDate dateString={postData.date} /></div>
         </div>
         <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
         </article>

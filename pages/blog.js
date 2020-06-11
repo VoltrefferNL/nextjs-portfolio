@@ -1,12 +1,9 @@
 import React from "react";
 import Layout from "../components/Layout";
-import ProjectText from "./content/ProjectText";
-import styles from "./content/content.module.css"
 import { getSortedPostsData} from '../lib/posts'
-import Link from 'next/link'
-import Date from '../components/date'
+import styles from "../styles/blog.module.css";
 import { useRouter } from 'next/router'
-
+import Blogline from "../components/blogline";
 
 
 export async function getStaticProps() {
@@ -25,6 +22,7 @@ const blog = ({ allPostsData }) => {
   const {tag} = router.query
     const tagsArr = allPostsData.filter(post => {
       if (tag){
+        
     return post.tags.includes(tag)
   }
     else {
@@ -34,11 +32,11 @@ const blog = ({ allPostsData }) => {
   );
    return (
     <Layout>
-    <section>
+    <section className={styles.blog_container}>
       
-      {tag ?  <div><center><br /><h4> <u>{tag}</u> Related Posts</h4></center></div> : ""}
+      {tag ?  <div><center><h4> <u>{tag}</u> Related Posts</h4></center></div> : ""}
         <ul>
-          {tagsArr.map(({ id, date, title, tags }) => (
+          {/* {tagsArr.map(({ id, date, title, tags }) => (
             <li key={id}>
               <Link href="/posts/[id]" as={`/posts/${id}`}>
               <a>{title}</a></Link>
@@ -48,7 +46,8 @@ const blog = ({ allPostsData }) => {
           <Link href={{pathname: '/blog', query: { "tag" : tag}}} as ={"/blog"} key={tag}><a><button>{tag}</button></a></Link>
         ))}</div>
             </li>
-          ))}
+          ))} */}
+          <Blogline tagsArr={tagsArr}/>
         </ul>
       </section>
 
