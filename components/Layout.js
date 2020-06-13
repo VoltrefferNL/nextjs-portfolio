@@ -1,8 +1,7 @@
 import Head from "next/head";
-import Navbar from "./Navbar copy";
-import Submenu from "./Submenu";
+import Navbar from "./Menu/Navbar";
 import styles from "./layout.module.css";
-import Socials from "./Socials.js";
+
 
 
 
@@ -30,8 +29,5 @@ const Layout = (props) => (
     <div className={styles.mainContent}> {props.children}</div>
   </div>
 );
-
-
-
 
 export default Layout;

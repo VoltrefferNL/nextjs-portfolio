@@ -3,7 +3,7 @@ import Layout from "../components/Layout";
 import { getSortedPostsData} from '../lib/posts'
 import styles from "../styles/blog.module.css";
 import { useRouter } from 'next/router'
-import Blogline from "../components/blogline";
+import Blogline from "../components/Blog/blogline";
 
 
 export async function getStaticProps() {

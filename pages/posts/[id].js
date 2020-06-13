@@ -1,6 +1,6 @@
 import Layout from '../../components/Layout'
 import { getAllPostIds, getPostData } from '../../lib/posts'
-import BlogDate from '../../components/blogdate'
+import BlogDate from '../../components/Blog/blogdate'
 import Head from "next/head";
 import styles from "../../styles/blog.module.css"
 import Link from "next/link";

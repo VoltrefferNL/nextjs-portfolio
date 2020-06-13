@@ -1,0 +1,162 @@
+.header_Wrapper{
+  height: 60px;
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  align-items: center;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+.logo_left{
+   border: 1px solid black;
+
+}
+
+.div_top_hypers {
+  display: flex;
+  -webkit-box-align: baseline;
+  align-items: baseline;
+  flex: 1 1 0%;
+}
+
+.div_top_hypers :last-of-type {
+  margin-left: auto;
+}
+
+.ul_top_hypers {
+  margin: 0; /* To remove default bottom margin */
+  padding: 0; /* To remove default left padding */
+  display: flex;
+  align-items: stretch;
+  float: right;
+}
+
+.ul_top_hypers li {
+  display: inline;
+  margin: 20px;
+}
+
+.ul_top_hypers img {
+  max-width: 40px;
+}
+
+.menu_right {
+  display: none;
+  z-index: 1;
+  font-size: 26px;
+}
+
+.menu_mobile {
+  display: none;
+}
+
+
+.menu_white {
+  background-color:rgba(255, 255, 255, 0.9);
+  top: 0;
+  position: fixed;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: auto;
+  transition: 5s ease-in;
+  text-align: center;
+  
+  }
+
+  
+  .menu_white ul {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+    margin-top: 150px;
+    margin-bottom: 100px;
+  }
+  
+  .menu_white li {
+    list-style-type: none;
+    margin: 15px;
+    padding: 15px;
+  }
+  
+.phoneLink{
+  font-family: 'Lato', sans-serif;
+  font-size: 35px !important;
+  color: #000000;
+  }
+
+.logomenu{
+  margin-top: ;
+}
+  
+  .menu_nav_mobile {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20%;
+    margin-left: 10%;
+    align-items: left;
+    justify-content: center;
+    
+  }  
+  
+  .hoverMenuLink {
+    -webkit-transition: .3s ease;
+    transition: .3s ease;
+    line-height: 24px;
+    position: relative;
+  }
+  .hoverMenuLink a:before {
+    content: " ";
+    display: block;
+    position: absolute;
+    bottom: 2px;
+    width: 100%;
+    height: 1px;
+    background: #262626;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    -webkit-transition: .3s ease;
+    transition: .3s ease;
+  }
+  .hoverMenuLink a:hover:before {
+    content: " ";
+    display: block;
+    position: absolute;
+    bottom: 2px;
+    width: 100%;
+    height: 1px;
+    background: #262626;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  
+  .hoverMenuLink a:before {
+    -webkit-transform-origin: left center;
+    transform-origin: left center;
+  }
+  
+  .menu_nav_socials{
+    flex-direction: row;
+  }
+  @media only screen and (max-width: 725px) {
+    .ul_top_hypers {
+      display: none;
+      backdrop-filter: blur(1);
+    }
+    
+    .menu_right {
+      display: initial;
+      
+    }
+    
+    
+  }
+  
+
+
+
+
+
+
