@@ -1,13 +1,10 @@
 import React from "react";
 import Link from "next/link";
 import styles from "./socials.module.css";
+import { Twitter, Github, Linkedin, Email } from "../data/SocialData";
 
-const Twitter = "https://twitter.com/DeVoltreffer";
-const Github = "https://github.com/VoltrefferNL";
-const Linkedin = "https://www.linkedin.com/in/niels-de-visser-5b718412a/";
-const Email = "mailto:niels@devisser.tech";
 
-const socials = () => {
+const Socials = () => {
   return (
     <div className={styles.socials}>
       <ul>
@@ -25,4 +22,4 @@ const socials = () => {
   );
 };
 
-export default socials;
+export default Socials;

@@ -1,20 +1,19 @@
 import Layout from "../components/Layout";
+
+import Intro from "../includes/Intro";
+import Projects from "../includes/Projects";
 import styles from "../styles/index.module.css";
-import IntroText from "./content/IntroText";
 
 const Index = () => (
   <Layout>
-    <div className={styles.container}>
-      <div className={styles.avatar}>
-        <img src={require("../images/0.jpg")} className={styles.profilePic} />
-      </div>
-      <div className={styles.introtext}>
-        <IntroText />
-        
-      </div>
-    </div>
-    
-  </Layout>
+
+  <Intro />  
+
+  <Projects />
+ 
+   </Layout>
 );
 
 export default Index;
+
+
