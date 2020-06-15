@@ -1,13 +1,17 @@
 import Layout from "../components/Layout";
-import styles from "../styles/index.module.css";
 
 import Intro from "../includes/Intro";
-
+import Projects from "../includes/Projects";
+import styles from "../styles/index.module.css";
 
 const Index = () => (
   <Layout>
-  <Intro className={styles.container}/>    
-  </Layout>
+
+  <Intro />  
+
+  <Projects />
+ 
+   </Layout>
 );
 
 export default Index;

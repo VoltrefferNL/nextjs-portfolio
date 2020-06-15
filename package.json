@@ -11,6 +11,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@material-ui/core": "^4.10.2",
     "@types/react-burger-menu": "^2.6.1",
     "date-fns": "^2.14.0",
     "gray-matter": "^4.0.2",
