@@ -1,19 +1,7 @@
-.container {
-  vertical-align: baseline;
-  margin: 0px;
-  padding: 0px;
-  border-width: 0px;
-  border-style: initial;
-  border-color: initial;
-  border-image: initial;
-  width: 100%;
-  }
-
 .desktop_spacer {
   width: 48px;
   height: 48px;
 }
-
 
 .navbar_wrapper {
   width: 100%; 
