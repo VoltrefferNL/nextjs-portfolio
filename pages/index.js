@@ -6,12 +6,9 @@ import styles from "../styles/index.module.css";
 
 const Index = () => (
   <Layout>
-
   <Intro />  
-
   <Projects />
- 
-   </Layout>
+    </Layout>
 );
 
 export default Index;
