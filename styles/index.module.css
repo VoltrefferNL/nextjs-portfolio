@@ -23,6 +23,7 @@
 @media (max-width: 830px) {
       .container_section {
         padding: 0px 0px;
+        height: 0vh;
         display: inline-block;
         margin: 15px;
 }
