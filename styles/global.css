@@ -9,8 +9,6 @@ body {
 .container_section{
   padding: 50px 100px;
   height: 70vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -81,7 +79,19 @@ h6 {
     
 }  
 
+@media only screen and (max-width: 1170px){
+  .container_section {
+    padding: 0px 100px;
+  }  
+}
 
+@media (max-width: 830px) {
+      .container_section {
+        padding: 0px 0px;
+        display: inline-block;
+        margin: 15px;
+}
+}
 
 
 
@@ -124,7 +134,4 @@ h6 {
   border-radius: .25em;
 }
 
-.bottom_space{
-  margin-bottom: 50px;
-}
 
