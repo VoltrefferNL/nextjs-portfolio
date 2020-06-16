@@ -10,7 +10,6 @@
   margin: 0 auto;
 }
 
-
 .introtext {
   margin: 5px;
   max-width: 900px;
@@ -26,8 +25,6 @@
       .container {
         padding: 0px 0px;
         display: inline-block;
-            margin: 15px;
-      }
-     
-    
-    }
+        margin: 15px;
+}
+}
