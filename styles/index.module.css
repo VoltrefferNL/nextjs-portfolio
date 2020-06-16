@@ -1,4 +1,4 @@
-.container {
+.container_section {
   padding: 50px 100px;
   height: 70vh;
   display: -webkit-box;
@@ -16,13 +16,13 @@
   }
 
 @media only screen and (max-width: 1170px){
-  .container {
+  .container_section {
     padding: 0px 100px;
   }  
 }
 
 @media (max-width: 830px) {
-      .container {
+      .container_section {
         padding: 0px 0px;
         display: inline-block;
         margin: 15px;
