@@ -5,10 +5,9 @@ import styles from "../styles/index.module.css";
 
 const Projects = () => {
     return (
-        
-        <div className={styles.container_section}>
+       <div className="trythis">
             <div className={styles.featured__projects}>
-              {projectsData.map((project) => (<Card projectData={project}/>))}
+              {projectsData.map((project) => (<Card projectData={project} key={project}/>))}
               </div>
         </div>
         
