@@ -5,13 +5,13 @@ import styles from "../styles/index.module.css";
 
 const Projects = () => {
     return (
-        <div>
-        <div className={styles.container}>
+        
+        <div className={styles.container_section}>
             <div className={styles.featured__projects}>
               {projectsData.map((project) => (<Card projectData={project}/>))}
               </div>
         </div>
-        </div>
+        
     );
 };
 
