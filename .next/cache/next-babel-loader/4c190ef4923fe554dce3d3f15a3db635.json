@@ -1,0 +1,1 @@
+{"ast":null,"code":"export const menuLinks = [{\n  path: \"/blog\",\n  name: \"Blog\"\n}, {\n  path: \"/#\",\n  name: \"100DaysofCode\"\n}];\nexport default {\n  menuLinks\n};","map":null,"metadata":{},"sourceType":"module"}
