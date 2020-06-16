@@ -6,7 +6,7 @@ import Socials from '../components/Socials';
 
 const Intro = () => {
     return (
-<div className="container_section">
+<div className={styles.container_section}>
 <div className={styles.introtext}>
   <IntroText />
   <Socials />
