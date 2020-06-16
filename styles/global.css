@@ -121,3 +121,16 @@ h6 {
   margin-bottom: 50px;
 }
 
+@media only screen and (max-width: 1170px){
+  .container_section {
+    padding: 0px 100px;
+  }  
+}
+
+@media (max-width: 830px) {
+      .container_section {
+        padding: 0px 0px;
+        display: inline-block;
+        margin: 15px;
+}
+}
