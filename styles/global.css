@@ -1,9 +1,159 @@
 body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   background-color: #fff;
+  color: #32323b;
+  font-family: 'Lato', sans-serif;
+  line-height: 1.5;
   width: 100%;
-  margin: 0px;
+  margin: 0;
   padding: 0;
   overflow-x: hidden; 
+}
+
+a {
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+  font-weight: 500;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+.bold {
+  font-weight: 700;
+}
+
+.italic {
+  
+  font-weight: 300;
+  font-style: italic;
+}
+
+.socials {
+  text-align: right;
+  position: absolute;
+  right: 0px;
+}
+
+.socials li{
+   padding: 15px;
+}
+
+.socials li a{
+  padding: 5px;
+  font-size: 1.25rem;
+ 
+}
+
+@media screen and (max-width: 480px) {
+  .socials {
+    padding: 35px 25px;
+    display: flex;
+  }
+}
+
+.container_introduction{
+  padding: 75px 100px;
+  height: 75vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 480px) {
+  .container_introduction {
+    padding: 35px 25px;
+    display: inherit;
+  }
+}
+
+.introduction_name{
+  font-weight: 300;
+  font-size: 2.75rem;
+}
+
+.introduction_subtext{
+  font-weight: 300;
+  font-size: 2.25rem;
+}
+
+.introduction_subtext .underline_email {
+    -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+  display: inline-block;
+  padding: 0px 0px;
+  text-decoration: none;
+  -webkit-box-shadow: inset 0 -1px 0 #f0a500;
+  box-shadow: inset 0 -3px 0 #f0a500;
+}
+
+
+@media only screen and (max-width: 1170px) {
+  .introduction_name,
+  .introduction_subtext{
+    font-size: 2.25rem;
+  }
+}
+@media screen and (max-width: 775px) {
+  .introduction_name,
+  .introduction_subtext{
+    font-size: 1.75rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .introduction_name,
+  .introduction_subtext{
+    font-size: 1.5rem;
+  }
+}
+
+.introduction_email{
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+.introduction_email .underline_email {
+  margin-left: 50px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+  display: inline-block;
+  padding: 1px 2px;
+  text-decoration: none;
+  -webkit-box-shadow: inset 0 -2px 0 #f0a500;
+  box-shadow: inset 0 -2px 0 #f0a500;
+}
+
+@media only screen and (max-width: 1170px) {
+  .introduction_email{  
+    font-size: 1.25rem;
+  }
+}
+@media screen and (max-width: 775px) {
+  .introduction_email{  
+    font-size: 1.25rem;
+  }
+  .introduction_email .underline_email{
+    margin: 0;
+  }
+}
+@media screen and (max-width: 480px) {
+  .introduction_email{  
+    font-size: 1rem;
+  }
+  .introduction_email .underline_email{
+    margin: 0;
+  }
 }
 
 .container_section{
@@ -16,72 +166,11 @@ body {
   margin: 0 auto;
 }
 
-p {
-  font-family: 'Lato', sans-serif;
-  font-weight: 300;
-  font-size: 20px;
-  line-height: 25px;
-  
-}
-
-.bold {
-  font-family: 'Lato', sans-serif;
-  font-weight: 700;
-}
-
-.italic {
-  font-family: 'Lato', sans-serif;
-  font-weight: 300;
-  font-style: italic;
-}
-
-h1 {
-  font-family: 'Lato', sans-serif;
-  font-weight: 900;
-  font-size: 45px;
-  line-height: 20px;
-  
-  }
-
-h2 {
-  font-family: 'Lato', sans-serif;
-  font-weight: 400;
-  font-size: 40px;
-  line-height: 20px;
-}
-
-h3 {
-  font-family: 'Lato', sans-serif;
-  font-size: 30px;
-  font-weight: 100 thin;
-  margin-bottom: 0em;
-  line-height: 20px;
-}
-
-h4 {
-  font-family: 'Lato', sans-serif;
-  font-size: 25px;
-  line-height: 20px;
-}
-
-h5 {
-  font-family: 'Lato', sans-serif;
-  font-weight: 300;
-  font-size: 45px;
-  /* line-height: 20px; */
-  
-}  
-h6 {
-    font-family: 'Lato', sans-serif;
-    font-weight: 300;
-    font-size: 35px;
-    /* line-height: 20px; */
-    
-}  
 
 @media only screen and (max-width: 1170px){
   .container_section {
     padding: 0px 100px;
+    
   }  
 }
 
@@ -92,31 +181,6 @@ h6 {
         display: inline-block;
         margin: 15px;
 }
-}
-
-
-
-
-@media only screen and (max-width: 1100px){
-  h5{
-    font-size: 40px;
-  }
-
-  h6{
-    font-size: 35px;
-  }
-
-}
-
-
-@media only screen and (max-width: 830px) {
-  h5 {
-    font-size: 30px;
-  }
-  
-  h6{
-    font-size: 25px;
-  }
 }
 
 .Javascript {

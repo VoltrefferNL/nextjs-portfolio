@@ -1,26 +1,8 @@
-.socials ul {
-    display: flex;
-    padding: 0;
-    margin: 0;
-    list-style-type: none;
-  }
+/* 
   
 .socials ul li {
     list-style: none;
   }
-  
-.socials ul li a {
-    width: 50px;
-    height: 50px;
-    background-color: #fcf6f5ff;
-    text-align: center;
-    line-height: 50px;
-    font-size: 25px;
-    margin: 0 10px;
-    display: block;
-    position: relative;
-    overflow: hidden;
-     }
   
 .socials ul li a .icon {
     position: relative;
@@ -32,8 +14,8 @@
 .socials ul li a:hover .icon {
     color: #fff;
     transform: rotateY(360deg);
-  }
+  } */
   
 
-  @media only screen and (max-width: 725px)  
+
   

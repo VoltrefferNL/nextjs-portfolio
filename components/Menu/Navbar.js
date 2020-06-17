@@ -26,7 +26,7 @@ return (
            {menuLinks.map(({path, name}) => (
       <li key={name} className={styles.hoverMenuLink}>
         <Link href={path} as={path}>
-          <a>{name}</a>
+          <a className={styles.deskLink}>{name}</a>
         </Link>
       </li>
 

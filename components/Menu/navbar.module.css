@@ -80,17 +80,16 @@
     margin: 15px;
     padding: 15px;
   }
-  
+ 
+ .deskLink{
+  font-size: 1.75rem !important;
+ } 
+
 .phoneLink{
-  font-family: 'Lato', sans-serif;
-  font-size: 35px !important;
-  color: #000000;
+   font-size: 2rem !important;
   }
 
-.logomenu{
-  margin-top: ;
-}
-  
+
   .menu_nav_mobile {
     display: flex;
     flex-direction: column;
@@ -104,7 +103,6 @@
   .hoverMenuLink {
     -webkit-transition: .3s ease;
     transition: .3s ease;
-    line-height: 24px;
     position: relative;
   }
   .hoverMenuLink a:before {
@@ -137,9 +135,7 @@
     transform-origin: left center;
   }
   
-  .menu_nav_socials{
-    flex-direction: row;
-  }
+
   @media only screen and (max-width: 725px) {
     .ul_top_hypers {
       display: none;
@@ -148,7 +144,7 @@
     
     .menu_right {
       display: initial;
-      
+     
     }
     
     
