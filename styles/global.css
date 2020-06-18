@@ -48,7 +48,7 @@ ul {
 
 .socials li a{
   padding: 5px;
-  font-size: 1.25rem;
+  font-size: 1.75rem;
  
 }
 
@@ -280,4 +280,15 @@ ul {
   .project_caption{
     margin: auto;
   }
+}
+
+.underline{
+-webkit-transition: all 0.2s ease-in-out;
+transition: all 0.2s ease-in-out;
+text-decoration: none;
+display: inline-block;
+padding: 1px 2px;
+text-decoration: none;
+-webkit-box-shadow: inset 0 -2px 0 #f0a500;
+box-shadow: inset 0 -2px 0 #f0a500;
 }

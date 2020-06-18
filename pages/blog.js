@@ -33,24 +33,13 @@ const blog = ({ allPostsData }) => {
    return (
     <Layout>
     <section className={styles.blog_container}>
-      
-      {tag ?  <div><center><h4> <u>{tag}</u> Related Posts</h4></center></div> : ""}
+      {tag ?  <div><h1><span className="underline"> {tag} </span>Related Posts</h1></div> : ""}
         <ul>
-          {/* {tagsArr.map(({ id, date, title, tags }) => (
-            <li key={id}>
-              <Link href="/posts/[id]" as={`/posts/${id}`}>
-              <a>{title}</a></Link>
-              <br />
-            <Date dateString={date} />
-             <div>{tags.map((tag) => (
-          <Link href={{pathname: '/blog', query: { "tag" : tag}}} as ={"/blog"} key={tag}><a><button>{tag}</button></a></Link>
-        ))}</div>
-            </li>
-          ))} */}
           <Blogline tagsArr={tagsArr}/>
         </ul>
+        
       </section>
-
+      
     </Layout>
   );
 };
