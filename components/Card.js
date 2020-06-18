@@ -19,9 +19,10 @@ export default function MediaCard(props) {
                })}
              </div>
         <p>{projectData.description}</p>
+        <p>{projectData.timeframe}</p>
   <div className="project_links">
-    <span><a href={projectData.github}><i className="fab fa-github icon"></i> Code</a></span>
-    <span><a href={projectData.hosted}><i className="fas fa-desktop icon"></i> Live Demo</a></span></div>
+    <span className="underline_links"><a href={projectData.github}><i className="fab fa-github icon"></i> Code</a></span>
+    <span className="underline_links"><a href={projectData.hosted}><i className="fas fa-desktop icon"></i> Live Demo</a></span></div>
   </div>
       
 </div>
