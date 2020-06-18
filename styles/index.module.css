@@ -8,12 +8,6 @@
   margin: 0 auto;
 }
 
-
-.introtext {
-  margin: 5px;
-  max-width: 900px;
-  }
-
 @media only screen and (max-width: 1170px){
   .container_section {
     padding: 0px 100px;

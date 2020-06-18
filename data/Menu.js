@@ -1,10 +1,15 @@
 export const menuLinks = [
-    {
-      path: "/blog", name: "Blog",
-    },
-    {
-      path: "/#", name: "100DaysofCode",
-    },
+  {
+    path: "/",
+    name: "Start"
+  }  ,
+  {
+    path: "/blog",
+    name: "Blog",
+  },
+    // {
+    //   path: "/#", name: "100DaysofCode",
+    // },
   
     ]
 

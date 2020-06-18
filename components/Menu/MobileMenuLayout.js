@@ -7,7 +7,6 @@ import Link from "next/link";
 const MobileMenuLayout = () => {
     return (
         <div>
-        <div className={styles.logomenu}>De visser.Tech</div>
         <ul className={styles.menu_nav_mobile}>
         {menuLinks.map(({path, name}) => (
           <li key={name}>

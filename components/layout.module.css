@@ -45,16 +45,6 @@
     transition: fill 350ms ease 0s;
 }
 
-
-.container a {
-  font-family: 'Lato', sans-serif;
-  font-size: 20px;
-  color: #000000;
-  font-weight: 100;
-  text-decoration: none;
-}
-
-
 @media only screen and (max-width: 1170px){
   .container{
     width: 100%;

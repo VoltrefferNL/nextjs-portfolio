@@ -20,13 +20,17 @@ export async function getStaticPaths() {
               <title>Niels de Visser | {postData.title}</title>
           </Head>
           <article className={styles.blog_container}>
-          <h5 className={styles.headingXl}>{postData.title}</h5>
+          <h1 className={styles.headingXl}>{postData.title}</h1>
         <div className={styles.lightText}>
-        
-        <div>{postData.tags.map((tag) => (
-          <Link href={{pathname: '/blog', query: { "tag" : tag}}} as ={"/blog"} key={tag}><a><span className={tag}>{tag}</span></a></Link>
-          
-        ))}<BlogDate dateString={postData.date} /></div>
+          <div>
+            <h3>
+              {postData.tags.map((tag) => (
+                <Link href={{pathname: '/blog', query: { "tag" : tag}}} as ={"/blog"} key={tag}>
+                  <a><span className={tag}>{tag}</span></a>
+                </Link>))}
+                <BlogDate dateString={postData.date} />
+            </h3>
+          </div>
         </div>
         <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
         </article>
