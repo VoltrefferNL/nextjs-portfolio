@@ -20,7 +20,7 @@ return (
   
   <header className={styles.header_Wrapper}>
   <div className={styles.div_top_hypers}>
-    <div className={styles.logo_left}>NdV</div>
+    <div className={styles.logo_left}><Link href="/" as="/"><a>deVisser.Tech</a></Link></div>
     <div></div>
     <ul className={styles.ul_top_hypers}>
            {menuLinks.map(({path, name}) => (

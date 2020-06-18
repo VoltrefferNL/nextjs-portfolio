@@ -28,15 +28,14 @@
 }
 
 .Article_listing{
-    font-family: 'Lato', sans-serif;
     font-weight: 300;
-    font-size: 18px;
-    
+    font-size: 1.5rem;
+
 }
 
 .Article_listing a{
-    font-family: lato;
-    font-size: 18px;
+    font-size: 1.5rem;
+    
    }
 
 .Blog_Date{
@@ -53,8 +52,15 @@
     border-right: solid 1px #dcdcdc;;
 }
 
-@media only screen and (max-width: 1170px){
-
+@media only screen and (max-width: 725px){
+    .Article_listing,
+    .Article_listing a{
+        font-size: 1.15rem;
+    }
+    
+    .topDate{
+        width: 110px;
+    }   
   }
   
   
