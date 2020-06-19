@@ -13,6 +13,7 @@ const Layout = (props) => (
       <meta property="og:site_name" content="Niels de Visser | Software Developer" />
       <meta property="og:description" content="A personal portfolio, where I share my projects, write about things I learn, and share additional thoughts." />
       <meta property="og:url" content="https://www.devisser.tech/" />
+      <meta name="description" content="A personal portfolio, where I share my projects, write about things I learn, and share additional thoughts." />
       <meta name="twitter:card" content="summary"></meta>
       <meta name="twitter:title" content="Niels de Visser | Software Developer"></meta>
       <meta name="twitter:site" content="@VoltrefferNL"></meta>
