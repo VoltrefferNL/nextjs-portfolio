@@ -15,10 +15,10 @@ Our app will be a mobile app, and we chose to use Flutter so we can develop for 
 Argon2 - Hashing our user's passwords
 I might touch upon some of the above-mentioned technologies in a later post, however, in the remainder of this post I'd like to highlight something smaller that I've implemented in the last week to allows us to hash passwords when we sign up and log in our users. It's called Argon2.
 
-<!-- ```javascript
+```javascript
     hash = await argon2.hash
     password, process.env.hashSalt);
- ``` -->
+ ```
 
 Argon2 is a package that allows you to "hash" data. In layman's terms hash functions allow the processing from humanly-readable data (`th!sIsMyPa$$word`) to random gibberish (19sNwesreihawoe+-). Hash functions are therefore mostly used to store passwords. Why? Firstly they don't reveal passwords if a data breach happens, and secondly, it prevents the system from having access to the actual user's password. When a user wants to log in, they enter their password and send it to the server. The server then hashes the user input and checks it against the previously submitted hash when the user originally created their account.
 
@@ -26,13 +26,13 @@ In the above line of code you can see our implementation in the user sign up. Ar
 
 In cryptography, a salt is random data that is used as an additional input to a one-way function that hashes data, a password or passphrase. Salts are used to safeguard passwords in storage. Historically a password was stored in plaintext on a system, but over time additional safeguards developed to protect a user's password against being read from the system. A salt is one of those methods.
 
-<!-- ```javascript
+```javascript
     if (await argon2.verify
     (encodedHash, password)) {
     return res.status(201)
     .send({ user: { ...user._doc,
     password: null } 
-```        -->
+```       
 
 When the user wants to login we use the hashed password and compare it to the user input. If everything checks out we send a 201 status and the user object return. This will result in a successful login for the user.
 
