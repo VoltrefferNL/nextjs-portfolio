@@ -64,7 +64,7 @@ ul {
   height: 75vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-evenly;
   max-width: 900px;
   margin: 0 auto;
 }
@@ -162,7 +162,7 @@ ul {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  max-width: 1440px;
+  max-width: 900px;
   margin: 0 auto;
 }
 

@@ -12,7 +12,7 @@ I'm <span className="bold underline_email">Niels de Visser</span>, a fullstack s
 Passionate about coding, learning new skills, travelling and riding my bike.
  </h2>
 
- <h2 className="introduction_subtext">I'm currently activly looking for a Junior Developer position. You can find my CV <span className="bold underline_email">here</span></h2>
+ <h3 className="introduction_subtext">I'm currently activly looking for a Junior Developer position. <span className="underline_email"><a href="/data/CV-NielsdeVisser.pdf" download>You can find my CV here.</a></span></h3>
 
 <h3 className="introduction_email"><span>Want to discuss something?</span> <span className="underline_email"><a href="mailto:niels@devisser.tech" target="_blank">Niels@deVisser.tech</a></span></h3>
     
