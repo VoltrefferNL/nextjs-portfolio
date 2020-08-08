@@ -4,6 +4,7 @@ import { Twitter, Github, Linkedin, Email } from "../data/SocialData";
 
 const Socials = () => {
   return (
+    
           <ul className="socials">
   <li>
     <a href={Twitter}><i className="fab fa-twitter icon"></i></a>

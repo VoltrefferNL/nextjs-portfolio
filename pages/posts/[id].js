@@ -4,6 +4,7 @@ import BlogDate from '../../components/Blog/blogdate'
 import Head from "next/head";
 import styles from "../../styles/blog.module.css"
 import Link from "next/link";
+
 export async function getStaticPaths() {
     const paths = getAllPostIds()
     return {
@@ -11,7 +12,6 @@ export async function getStaticPaths() {
       fallback: false
     }
   }
-
   
   export default function Post({ postData}) {
      return (
